@@ -2,6 +2,7 @@
   "name": "christians-website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://anthonygleason.github.io/christian-website/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -12,6 +13,7 @@
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
     "bootstrap": "^5.3.6",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.0",
