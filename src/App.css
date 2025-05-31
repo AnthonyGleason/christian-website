@@ -3,7 +3,7 @@
 :root{
   --nav-background-color: #fdfff5;
   --service-button-background-color: #f2e8de;
-  --app-background-color: white;
+  --app-background-color: #fdfff5;
   --button-border-color: rgb(53, 57, 245);
   --meet-christian-bg-color: rgba(219, 219, 219, 0.75);
   --text-color: rgb(0, 0, 0);
@@ -62,7 +62,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 5%;
-  box-shadow: 0 2px 5px rgba(37,39,44,.05),0 1px 10px rgba(37,39,44,.2);
 }
 .App .meet-christian-content{
   padding: 2em;
@@ -94,6 +93,7 @@
   flex-direction: column;
   gap: 2em;
   width: 100%;
+  background-color: white;
   height: 100%;
   margin-bottom: 0;
   list-style: none;
@@ -142,7 +142,7 @@
 }
 .consultations{
   background-color: var(--nav-background-color);
-  z-index: 2;
+  z-index: 5;
   box-shadow: 0 2px 5px rgba(37,39,44,.05),0 1px 10px rgba(37,39,44,.2);
 }
 .media-appearance{
