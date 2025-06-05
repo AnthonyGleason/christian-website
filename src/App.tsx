@@ -13,9 +13,7 @@ import nycImg from './assets/sunset-3875817.jpg';
 import consultationBookImg from './assets/consultation-9530086.svg';
 import mediaAppearanceImg from './assets/microphone-8689065.png';
 import youtubeAltImg from './assets/presentation-9591454.svg';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
+import newsletterImg from './assets/newsletter.jpg';
 
 function App() {
   return (
@@ -114,17 +112,23 @@ function App() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <Button>REQUEST A COLLABORATION</Button>
         </section>
-        <section id='youtube' className='youtube'>
+        <section    
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              id='youtube' 
+              className='youtube'>
           <img alt='follow me on youtube' src={youtubeAltImg} />
           <h2>Subscribe on YouTube</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <Button>VISIT THE CHANNEL</Button>
         </section>
-        <section id='join-the-community' className='join-the-community'>
+        <section     
+              id='join-the-community' 
+              className='join-the-community'>
           <form>
-            <img alt='my weekly newsletter' src='https://placehold.co/300x300' />
+            <img alt='my weekly newsletter' src={newsletterImg} />
             <h2>Like What You Heard?</h2>
-            <p>Subscribe to my weekly newsletter</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <input type='text' placeholder='Enter your email' />
             <Button>SUBSCRIBE</Button>
           </form>
