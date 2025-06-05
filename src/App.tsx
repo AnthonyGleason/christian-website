@@ -14,6 +14,9 @@ import consultationBookImg from './assets/consultation-9530086.svg';
 import mediaAppearanceImg from './assets/microphone-8689065.png';
 import youtubeAltImg from './assets/presentation-9591454.svg';
 import newsletterImg from './assets/newsletter.jpg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+Aos.init();
 
 function App() {
   return (
@@ -92,7 +95,9 @@ function App() {
             </li>
           </ul>
         </section>
-        <section
+        <section   
+              data-aos="fade-right"
+              data-aos-duration="2000"
               id='book-a-consultation' 
               className='consultations'
         >
@@ -102,7 +107,7 @@ function App() {
           <Button>SCHEDULE A SESSION</Button>
         </section>
         <section   
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="2000"
               id='media-appearance' 
               className='media-appearance' 
@@ -113,7 +118,7 @@ function App() {
           <Button>REQUEST A COLLABORATION</Button>
         </section>
         <section    
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="2000"
               id='youtube' 
               className='youtube'>
@@ -123,6 +128,8 @@ function App() {
           <Button>VISIT THE CHANNEL</Button>
         </section>
         <section     
+              data-aos="fade-right"
+              data-aos-duration="2000"   
               id='join-the-community' 
               className='join-the-community'>
           <form>
@@ -134,7 +141,7 @@ function App() {
           </form>
         </section>
       </main>
-      <footer>
+      <footer className='footer'>
         <h2>Christian, Life Coach</h2>
         <ul>
           <li>Community</li>
