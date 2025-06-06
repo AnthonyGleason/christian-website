@@ -120,6 +120,8 @@
   background-color: white;
   border-radius: 15px;
   padding: 10px;
+  width: -moz-available;
+  max-width: 400px;
 }
 .service-options li img{
   width: 100%;
@@ -139,6 +141,10 @@
   flex-direction: column;
   justify-content: space-evenly;
   gap: 15px;
+  padding-top: 12vh;
+}
+.service-options{
+  padding-top: 12vh;
 }
 .consultations{
   background-color: var(--nav-background-color);
