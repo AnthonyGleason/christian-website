@@ -17,6 +17,7 @@ import newsletterImg from './assets/newsletter.jpg';
 import tiktokImg from './assets/logos--tiktok-icon.svg';
 import instagramImg from './assets/skill-icons--instagram.svg';
 import linkedinImg from './assets/skill-icons--linkedin.svg';
+import youtubeAltIconImg from './assets/youtube-alt.svg';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -180,6 +181,9 @@ function App() {
           </li>
           <li>
             <img alt='tiktok page' src={tiktokImg} />
+          </li>
+          <li>
+            <img alt='youtube page' src={youtubeAltIconImg} />
           </li>
         </ul>
       </footer>
