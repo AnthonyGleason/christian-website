@@ -51,21 +51,26 @@
 .App nav button img{
   min-width: 30px;
 }
-.App .nav-slider{
-  z-index: 4;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: var(--nav-background-color);
+.App .nav-slider {
+  position: absolute;
   top: 60px;
-  box-shadow: 0 2px 5px rgba(37,39,44,.05),0 1px 10px rgba(37,39,44,.2);
-  position: sticky;
+  left: 0;
+  right: 0;
+  background-color: var(--nav-background-color);
   flex-direction: column;
   list-style: none;
-  margin-bottom: 0;
-  padding-left: 15px;
+  margin: 0;
+  padding: 0px 18px 5px 18px;
   gap: 5px;
-  padding-bottom: 15px;
+  z-index: 4;
+  box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.3);
+  max-height: 0;        /* collapsed */
+  overflow: hidden;     /* clip content */
+  transition: max-height 0.3s ease;  /* only slide */
+}
+
+.App .nav-slider.show {
+  max-height: 300px;    /* expanded — set to something big enough */
 }
 
 .App .nav-slider a{

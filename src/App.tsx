@@ -38,12 +38,13 @@ function App() {
         <Button onClick={()=>{toggleNavSlider(navSliderDisplayState,setNavSliderDisplayState)}}>
           <img alt='open nav bar' src={navLines} />
         </Button>
-      </Navbar>
-      <ul className='nav-slider' style={{display: navSliderDisplayState}}>
+      <ul className={`nav-slider ${navSliderDisplayState === 'flex' ? 'show' : ''}`}>
         <li><a href='#join-the-community' onClick={()=>{toggleNavSlider(navSliderDisplayState,setNavSliderDisplayState)}}>Community</a></li>
         <li><a href='#book-a-consultation' onClick={()=>{toggleNavSlider(navSliderDisplayState,setNavSliderDisplayState)}}>Consultations</a></li>
         <li><a href='#media-appearance' onClick={()=>{toggleNavSlider(navSliderDisplayState,setNavSliderDisplayState)}}>Collaborations</a></li>
+        <li><a href='#youtube' onClick={()=>{toggleNavSlider(navSliderDisplayState,setNavSliderDisplayState)}}>Youtube</a></li>
       </ul>
+      </Navbar>
       <main className='content'>
         <section  
           data-aos="fade-in"
