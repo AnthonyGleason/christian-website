@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -22,17 +22,28 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 Aos.init();
 
+const toggleNavSlider = function(navSliderDisplayState:string,setNavSliderDisplayState:Function){
+  navSliderDisplayState === 'none' ? setNavSliderDisplayState('flex') : setNavSliderDisplayState('none');
+};
+
 function App() {
+  const [navSliderDisplayState,setNavSliderDisplayState] = useState('none');
+
   return (
     <div className="App">
       <Navbar>
         <h1>
           <a href='/'>Christian, Life Coach</a>
         </h1>
-        <Button>
+        <Button onClick={()=>{toggleNavSlider(navSliderDisplayState,setNavSliderDisplayState)}}>
           <img alt='open nav bar' src={navLines} />
         </Button>
       </Navbar>
+      <ul className='nav-slider' style={{display: navSliderDisplayState}}>
+        <li><a href='#join-the-community' onClick={()=>{toggleNavSlider(navSliderDisplayState,setNavSliderDisplayState)}}>Community</a></li>
+        <li><a href='#book-a-consultation' onClick={()=>{toggleNavSlider(navSliderDisplayState,setNavSliderDisplayState)}}>Consultations</a></li>
+        <li><a href='#media-appearance' onClick={()=>{toggleNavSlider(navSliderDisplayState,setNavSliderDisplayState)}}>Collaborations</a></li>
+      </ul>
       <main className='content'>
         <section  
           data-aos="fade-in"
@@ -139,7 +150,7 @@ function App() {
           <form>
             <img alt='my weekly newsletter' src={newsletterImg} />
             <h2>Like What You Heard?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
             { /* the below input box breaks with bitwarden, permission denied error */}
             <input type='text' placeholder='Enter your email' /> 
             <Button>SUBSCRIBE</Button>

@@ -26,13 +26,12 @@
   z-index: 5;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  padding: 15px 15px 5px 15px;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 1.5px;
   background-color: var(--nav-background-color);
-  top: 0;
-  box-shadow: 0 2px 5px rgba(37,39,44,.05),0 1px 10px rgba(37,39,44,.2);
+  top: 0px;
   position: sticky;
 }
 .App nav a{
@@ -41,6 +40,8 @@
   font-weight: 550;
   font-size: 24px;
 }
+
+
 .App nav button{
   background-color: var(--button-bg-color);
   border-radius: 5px;
@@ -50,6 +51,30 @@
 .App nav button img{
   min-width: 30px;
 }
+.App .nav-slider{
+  z-index: 4;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: var(--nav-background-color);
+  top: 60px;
+  box-shadow: 0 2px 5px rgba(37,39,44,.05),0 1px 10px rgba(37,39,44,.2);
+  position: sticky;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 15px;
+  gap: 5px;
+  padding-bottom: 15px;
+}
+
+.App .nav-slider a{
+  color: black;
+  text-decoration: none;
+  font-weight: 550;
+  font-size: 16px;
+}
+
 .App .christian img{
   max-width: 800px;
   width: 100%;
