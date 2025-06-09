@@ -197,4 +197,31 @@
   flex-direction: column;
   background-color: var(--button-bg-color);
   color: white;
+  gap: 1em;
+}
+.App .footer .footer-links{
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  padding: 1em;
+}
+.App .footer .footer-links a{
+  color: white;
+}
+.App .footer .footer-social-links{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  gap: 15px;
+}
+.App .footer .footer-social-links img{
+  max-width: 80px;
+  width: 10vw;
 }

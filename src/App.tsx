@@ -14,6 +14,10 @@ import consultationBookImg from './assets/consultation-9530086.svg';
 import mediaAppearanceImg from './assets/microphone-8689065.png';
 import youtubeAltImg from './assets/presentation-9591454.svg';
 import newsletterImg from './assets/newsletter.jpg';
+import tiktokImg from './assets/logos--tiktok-icon.svg';
+import instagramImg from './assets/skill-icons--instagram.svg';
+import linkedinImg from './assets/skill-icons--linkedin.svg';
+
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 Aos.init();
@@ -144,20 +148,26 @@ function App() {
       </main>
       <footer className='footer'>
         <h2>Christian, Life Coach</h2>
-        <ul>
-          <li>Community</li>
-          <li>Consultations</li>
-          <li>Collaborations</li>
+        <ul className='footer-links'>
+          <li>
+            <a href='#join-the-community'>Community</a>
+          </li>
+          <li>
+            <a href='#book-a-consultation'>Consultations</a>
+          </li>
+          <li>
+            <a href='#media-appearance'>Collaborations</a>
+          </li>
         </ul>
-        <ul>
+        <ul className='footer-social-links'>
           <li>
-            <img alt='instagram page' src='https://placehold.co/32x32' />
+            <img alt='instagram page' src={instagramImg} />
           </li>
           <li>
-            <img alt='linkedin profile' src='https://placehold.co/32x32' />
+            <img alt='linkedin profile' src={linkedinImg} />
           </li>
           <li>
-            <img alt='tiktok page' src='https://placehold.co/32x32' />
+            <img alt='tiktok page' src={tiktokImg} />
           </li>
         </ul>
       </footer>
