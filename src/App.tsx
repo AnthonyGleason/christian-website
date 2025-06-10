@@ -179,10 +179,14 @@ function App() {
         </ul>
         <ul className='footer-social-links'>
           <li>
-            <img alt='instagram page' src={instagramImg} />
+            <a href='https://www.instagram.com/perkasetpx/?hl=en'>
+              <img alt='instagram page' src={instagramImg} />
+            </a>
           </li>
           <li>
-            <img alt='tiktok page' src={tiktokImg} />
+            <a href='https://www.tiktok.com/@perkasetpx'>
+              <img alt='tiktok page' src={tiktokImg} />
+            </a>
           </li>
           <li>
             <img alt='youtube page' src={youtubeAltIconImg} />
