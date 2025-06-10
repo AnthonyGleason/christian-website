@@ -16,8 +16,8 @@ import youtubeAltImg from './assets/presentation-9591454.svg';
 import newsletterImg from './assets/newsletter.jpg';
 import tiktokImg from './assets/logos--tiktok-icon.svg';
 import instagramImg from './assets/skill-icons--instagram.svg';
-import linkedinImg from './assets/skill-icons--linkedin.svg';
 import youtubeAltIconImg from './assets/youtube-alt.svg';
+import { PopupButton } from 'react-calendly';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -34,7 +34,7 @@ function App() {
     <div className="App">
       <Navbar>
         <h1>
-          <a href='/'>Christian, Life Coach</a>
+          <a href='/'>Christian Perkaset, Life Coach</a>
         </h1>
         <Button onClick={()=>{toggleNavSlider(navSliderDisplayState,setNavSliderDisplayState)}}>
           <img alt='open nav bar' src={navLines} />
@@ -121,7 +121,12 @@ function App() {
           <img alt='book a consultation with me' src={consultationBookImg} />
           <h2>Book a Consultation</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <Button>SCHEDULE A SESSION</Button>
+          <PopupButton
+            url="https://calendly.com/ainfortunio1"  // <-- replace with your real Calendly link
+            rootElement={document.getElementById('root')!} // this tells Calendly where to attach the modal
+            text="BOOK 1-ON1 CONSULTATION"
+            className="btn btn-primary"
+          />
         </section>
         <section   
               data-aos="fade-right"
@@ -132,7 +137,7 @@ function App() {
           <img alt='schedule a media appearance with me' src={mediaAppearanceImg} />
           <h2>Schedule a Media Appearance</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <Button>REQUEST A COLLABORATION</Button>
+          <Button onClick={()=>{window.location.href='mailto:placeholder@placeholder.com'}}>REQUEST A COLLABORATION</Button>
         </section>
         <section    
               data-aos="fade-right"
@@ -160,7 +165,7 @@ function App() {
         </section>
       </main>
       <footer className='footer'>
-        <h2>Christian, Life Coach</h2>
+        <h2>Christian Perkaset,<br />Life Coach</h2>
         <ul className='footer-links'>
           <li>
             <a href='#join-the-community'>Community</a>
@@ -175,9 +180,6 @@ function App() {
         <ul className='footer-social-links'>
           <li>
             <img alt='instagram page' src={instagramImg} />
-          </li>
-          <li>
-            <img alt='linkedin profile' src={linkedinImg} />
           </li>
           <li>
             <img alt='tiktok page' src={tiktokImg} />
